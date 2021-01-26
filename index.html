@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Luck Tester</title>
+    <!--i am use bootstrap link only for toggle data-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="js.js"></script>
+</head>
+
+<body>
+    <!--audio files-->
+    <div>
+        <audio id="myAudio">
+            <source src="Fireworks.mp3" type="audio/mpeg">
+          </audio>
+        <audio id="myAudio2">
+            <source src="Cheering.mp3" type="audio/mpeg">
+          </audio>
+        <audio id="myAudio3">
+            <source src="Cheering2.mp3" type="audio/mpeg">
+          </audio>
+        <audio id="myAudio4">
+            <source src="BabyCrying.mp3" type="audio/mpeg">
+          </audio>
+        <audio id="myAudio5">
+            <source src="spin.mp3" type="audio/mpeg">
+          </audio>
+    </div>
+    <!--end audio files-->
+
+
+    <!--main div of luck tester-->
+    <div class="luck">
+
+        <!--luck title-->
+        <div id="luck_title" class="luck-title">
+            <h1><span>L</span><span>U</span><span>C</span><span style="margin-right: 30px;">K</span><span> T</span><span>E</span><span>S</span><span>T</span><span>E</span><span>R</span></h1>
+        </div>
+        <!-- end luck title-->
+
+        <!-- result board for showing random number-->
+        <div id="luckConter" class="luck-conter">
+            <span id="1">....</span>
+            <span id="2">....</span>
+            <span id="3">....</span>
+        </div>
+        <!--end result board-->
+
+        <!-- result image board for showing result image-->
+        <div class="luck-result" id="luck_result">
+            <img id="changeImg" src="happy.jpg" alt="spiner" />
+        </div>
+        <!--end result image board-->
+
+        <!-- luck heading board-->
+        <div id="luck-heading" class="luck-heading">
+            <h3 id="ResultBord">You Have <span id="resultBord">3</span> Chance To Test Your Luck</h3>
+        </div>
+        <!--end luck heading board-->
+
+        <!-- dropdown for pick user's number-->
+        <div id="luck-num" class="luck-num">
+            <select id="myNum">
+                    <option disabled value="">..............................</option>
+                    <option value="" selected>Pick Your Number...</option>
+                    <option disabled value="">..............................</option>
+                    <option value="01">1</option>
+                    <option value="02">2</option>
+                    <option value="03">3</option>
+                    <option value="04">4</option>
+                    <option value="05">5</option>
+                    <option value="06">6</option>
+                    <option value="07">7</option>
+                    <option value="08">8</option>
+                    <option value="09">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="15">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option> 
+                    <!--extra dropdown for comfort to drop-->
+                    <option disabled value="">..............................</option>
+                    <option disabled value=""></option>
+                    <option disabled value=""></option>
+                    <option disabled value=""></option>
+                    <option disabled value=""></option>
+                    <option disabled value=""></option>
+</select>
+        </div>
+        <!--end dropdown-->
+
+        <!-- refresh page for showing massage and seconds-->
+        <div id="refreshPage" class="refreshPage">
+            <p id="refresh"></p><span id="timer"></span><span id="seconds"></span>
+        </div>
+        <!--end refresh page -->
+
+        <!--spinner-->
+        <div id="spiner2" class="spiner">
+            <a id="spiner" onclick="checkNum()"><img id="spinerImg" src="spiner.png" alt="spiner" /></a>
+        </div>
+        <!--end spinner-->
+
+        <!--footer-->
+        <div id="luck-footer" class="luck-footer">
+            <a data-target="#tc" data-toggle="modal">
+                <h5>Term & Conditions</h5>
+            </a>
+        </div>
+        <!--end footer-->
+
+        <!--modal for terms and conditions-->
+        <div id="tc" class="modal fade" role="dialog">
+            <div class="modal-contain">
+                <div class="modal-header">
+                    <div class="modal-title">
+                        <div class="btn btn-top">
+                            <button data-dismiss="modal">X</button>
+                        </div>
+                        <h1>Luck Tester</h1>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <p>you have to three chance to test your luck</p>
+
+                    <ul>
+                        <li>Pick You Number</li>
+                        <li>Press The Go Button</li>
+                        <li>Check Your Result at The Top of Page</li>
+                        <li>If it's Shows Green Light Then You Won First Time</li>
+                        <li>IF it's Shows Red Light Then You Lose</li>
+                        <li>Repeat This Steps For Three Times</li>
+                        <li>If You Won Two & More Then Times Then You Won The Game</li>
+                        <li>Else You Lose The Game</li>
+                        <br><br>
+                        <li style="color: rgb(0, 0, 0);background-color:  rgb(255, 238, 0);width: 100%; font-size: 30px; border-radius: 15px; font-weight: bold;">---Best of Luck---</li>
+                    </ul>
+                    <div class="btn btn-bootom">
+                        <button data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+        <!--end modal-->
+
+
+    </div>
+    <!--end main div-->
+</body>
+
+</html>

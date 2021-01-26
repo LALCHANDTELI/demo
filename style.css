@@ -1,0 +1,236 @@
+/* this is for accurate sizes*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(39, 0, 43);
+}
+
+.luck {
+    text-align: center;
+    color: white;
+}
+
+.spiner img {
+    border: 9px solid rgb(0, 248, 0);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.spiner {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: 25px;
+}
+
+.luck-title h1 span {
+    position: relative;
+    display: inline-block;
+    animation: bounce 1.5s ease;
+    font-size: 80px;
+    color: #fff;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc, 0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent, 0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+h1 span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+h1 span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+h1 span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+h1 span:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+h1 span:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+h1 span:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+h1 span:nth-child(8) {
+    animation-delay: 0.7s;
+}
+
+h1 span:nth-child(9) {
+    animation-delay: 0.8s;
+}
+
+h1 span:nth-child(10) {
+    animation-delay: 0.9s;
+}
+
+
+/* this is for jump luck title*/
+
+@keyframes bounce {
+    100% {
+        top: -20px;
+        text-shadow: 3px 1px 0 rgb(255, 230, 0), 0 2px 0 rgb(9, 255, 0), 0 3px 3px rgb(0, 4, 255), 0 4px 0 rgb(0, 204, 255), 0 5px 0 rgb(255, 0, 179), 0 6px 5px rgb(252, 0, 55), 0 7px 0 rgb(31, 0, 46), 0 8px 0 rgb(0, 255, 221), 0 9px 0 #ccc, 0 50px 25px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.luck-title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    user-select: none;
+    margin: 30px;
+    border: 15px double rgb(53, 255, 3);
+    border-radius: 30px;
+    background-color: rgb(252, 0, 0);
+}
+
+.luck-heading {
+    text-shadow: 1px 1px 0 rgb(167, 160, 160);
+    user-select: none;
+    padding: 3px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 30px;
+    margin: auto;
+    width: fit-content;
+    background-color: rgb(80, 0, 0);
+}
+
+.luck-footer {
+    margin-top: 30px;
+    background-color: rgb(255, 0, 64);
+    padding: 3px;
+}
+
+.luck-footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.luck-num {
+    border-radius: 5px;
+    margin: auto;
+    width: fit-content;
+    border: 3px solid rgb(253, 253, 253);
+    margin-top: 15px;
+}
+
+.luck-num select {
+    background-color: blue;
+    font-size: 20px;
+}
+
+.luck-conter {
+    display: none;
+    border: 3px solid rgb(0, 255, 13);
+    border-radius: 30px;
+    padding: 9px;
+    user-select: none;
+    margin: auto;
+    margin-top: 30px;
+    width: fit-content;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 9px;
+}
+
+.luck-conter span {
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 30px;
+    height: 50px;
+    width: fit-content;
+    margin: 3px;
+}
+
+.luck-conter .round1 {
+    background-color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+.luck-conter .round2 {
+    background-color: rgb(255, 255, 255);
+}
+
+.luck-conter .round3 {
+    background-color: rgb(0, 255, 13);
+    background-color: rgb(255, 255, 255);
+}
+
+#tc {
+    background-color: blue;
+    width: 50%;
+    margin: auto;
+    height: fit-content;
+    border: 30px solid rgb(0, 255, 13);
+    border-radius: 9px;
+}
+
+.modal-body ul li {
+    list-style: none;
+}
+
+.btn button {
+    width: 100%;
+    color: white;
+    background-color: red;
+    padding: 3px;
+}
+
+.btn-top {
+    float: right;
+    font-size: 20px;
+}
+
+.btn-bootom {
+    width: 100%;
+}
+
+#resultBord {
+    padding: 5px;
+    background-color: rgb(255, 238, 0);
+    color: red;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 35px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.luck-result img {
+    margin-top: 9px;
+    margin-bottom: 9px;
+    height: 300px;
+    width: 300px;
+    border: 9px solid rgb(255, 217, 0);
+    border-radius: 50%;
+}
+
+#luck_result {
+    display: none;
+    margin: auto;
+}
+
+.refreshPage {
+    user-select: none;
+    color: rgb(255, 238, 0);
+}
+
+
+/* this is for spin spinner*/
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
